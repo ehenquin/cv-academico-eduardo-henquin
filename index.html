@@ -1,0 +1,2518 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Académico Editorial | Dr. Eduardo Rubén Henquín</title>
+  <meta name="description"
+    content="Currículum vitae académico e institucional completo del Dr. Eduardo Rubén Henquín. Investigador Adjunto CONICET y Especialista en Energía e IA.">
+
+  <!-- Google Fonts: Inter para un look editorial y moderno -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #4c1d95;
+      /* Violeta Institucional */
+      --primary-light: #7c3aed;
+      --accent: #6d28d9;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-light: #94a3b8;
+      --bg-body: #ffffff;
+      --bg-sidebar: #ffffff;
+      --bg-alt: #f8fafc;
+      --border: #e2e8f0;
+      --radius: 12px;
+      --sidebar-width: 320px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    a:hover {
+      color: var(--primary-light);
+      text-decoration: underline;
+    }
+
+    /* BARRA SUPERIOR (NAV) */
+    .top-bar {
+      background-color: var(--primary);
+      color: white;
+      min-height: 50px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 0 24px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .top-nav {
+      display: flex;
+      gap: 10px;
+      list-style: none;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: none;
+      flex: 1 1 auto;
+      min-width: 0;
+      width: auto;
+      align-items: center;
+      padding-right: 8px;
+    }
+
+    .top-nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .top-nav li {
+      flex: 0 0 auto;
+    }
+
+    .top-nav a {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.045em;
+      white-space: nowrap;
+      padding: 8px 9px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .top-nav a:hover {
+      color: white;
+      background: rgba(255, 255, 255, 0.12);
+      text-decoration: none;
+    }
+
+    .btn-print-top {
+      flex: 0 0 auto;
+      background: white;
+      color: var(--primary);
+      border: none;
+      padding: 7px 18px;
+      border-radius: 7px;
+      font-size: 0.68rem;
+      font-weight: 900;
+      line-height: 1.15;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-left: 0;
+      transition: transform 0.2s, background 0.2s;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    }
+
+    .btn-print-top:hover {
+      transform: translateY(-1px);
+      background: #f1f5f9;
+    }
+
+    /* LAYOUT ESTRUCTURAL */
+    .app-container {
+      display: flex;
+      max-width: 1440px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* SIDEBAR (IZQUIERDA) */
+    .sidebar {
+      width: var(--sidebar-width);
+      background-color: var(--bg-sidebar);
+      border-right: 1px solid var(--border);
+      padding: 60px 40px;
+      position: sticky;
+      top: 50px;
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+      flex-shrink: 0;
+      scrollbar-width: thin;
+    }
+
+    .profile-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 24px;
+      object-fit: cover;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      border: 4px solid white;
+    }
+
+    .sidebar h1 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--primary);
+      line-height: 1.1;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .sidebar .cargo {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    .cargo-list {
+      list-style: disc;
+      text-align: left;
+      max-width: 250px;
+      margin: 0 auto 30px;
+      padding-left: 18px;
+    }
+
+    .cargo-list li {
+      margin-bottom: 6px;
+    }
+
+    .sidebar-section {
+      margin-bottom: 35px;
+    }
+
+    .sidebar-section h3 {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-light);
+      margin-bottom: 15px;
+      font-weight: 800;
+    }
+
+    .contact-info {
+      font-size: 0.82rem;
+      color: var(--text-main);
+    }
+
+    .contact-item {
+      margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-item label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 2px;
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      background-color: var(--bg-alt);
+      color: var(--primary);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      border: 1px solid var(--border);
+    }
+
+    /* CONTENIDO PRINCIPAL (DERECHA) */
+    .main-content {
+      flex-grow: 1;
+      padding: 54px 92px 70px;
+      max-width: 1100px;
+    }
+
+    section {
+      margin-bottom: 54px;
+      scroll-margin-top: 82px;
+    }
+
+    .section-header {
+      margin-bottom: 22px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--text-main);
+      letter-spacing: -0.03em;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      line-height: 1.08;
+    }
+
+    .section-title::after {
+      content: '';
+      flex-grow: 1;
+      height: 2px;
+      background-color: var(--border);
+    }
+
+    /* BLOQUES DE CONTENIDO (EDITORIAL) */
+    .content-block {
+      margin-bottom: 28px;
+      position: relative;
+    }
+
+    .block-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 4px;
+    }
+
+    .block-date {
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 0.85rem;
+      white-space: nowrap;
+      min-width: 120px;
+      padding-top: 2px;
+    }
+
+    .block-main {
+      flex-grow: 1;
+      padding-left: 26px;
+      border-left: 2px solid var(--border);
+    }
+
+    .block-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .block-subtitle {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .block-description {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* PUBLICACIONES ESTILO ACADÉMICO */
+    .publication-item {
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--bg-alt);
+    }
+
+    .pub-status-pill {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      background-color: var(--primary-soft);
+      color: var(--primary);
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    .pub-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: block;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+
+    .pub-meta {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .pub-authors {
+      font-weight: 500;
+      color: var(--text-main);
+    }
+
+    .pub-journal {
+      font-style: italic;
+      color: var(--primary);
+    }
+
+    /* DETAILS/SUMMARY CUSTOM */
+    details {
+      margin-bottom: 15px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-alt);
+    }
+
+    summary {
+      padding: 15px 20px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      user-select: none;
+      outline: none;
+      color: var(--primary);
+    }
+
+    summary:hover {
+      background: #f1f5f9;
+    }
+
+    .details-body {
+      padding: 20px;
+      background: white;
+      border-top: 1px solid var(--border);
+    }
+
+    /* TABLAS EDITORIALES */
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 20px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+
+    th {
+      text-align: left;
+      padding: 12px;
+      border-bottom: 2px solid var(--primary);
+      color: var(--primary);
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+    }
+
+    td {
+      padding: 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1100px) {
+      .top-bar {
+        padding: 0 14px;
+        gap: 10px;
+      }
+
+      .top-nav {
+        gap: 6px;
+      }
+
+      .top-nav a {
+        font-size: 0.64rem;
+        padding: 7px 8px;
+      }
+
+      .btn-print-top {
+        padding: 6px 12px;
+        font-size: 0.62rem;
+      }
+
+      .app-container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 34px 22px 28px;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .profile-section {
+        margin-bottom: 28px;
+      }
+
+      .profile-photo {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 18px;
+      }
+
+      .main-content {
+        padding: 34px 22px 56px;
+        max-width: none;
+      }
+
+      section {
+        margin-bottom: 44px;
+        scroll-margin-top: 72px;
+      }
+
+      .block-header {
+        flex-direction: column;
+      }
+
+      .block-date {
+        margin-bottom: 8px;
+        min-width: 0;
+      }
+
+      .block-main {
+        padding-left: 0;
+        border-left: none;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .top-bar {
+        height: auto;
+        min-height: 0;
+        flex-wrap: wrap;
+        align-items: stretch;
+        padding: 7px 10px 8px;
+        gap: 7px;
+      }
+
+      .btn-print-top {
+        order: 1;
+        margin-left: auto;
+        padding: 6px 10px;
+        font-size: 0.6rem;
+        border-radius: 6px;
+      }
+
+      .top-nav {
+        order: 2;
+        flex-basis: 100%;
+        width: 100%;
+        gap: 5px;
+        padding-right: 0;
+        padding-bottom: 2px;
+      }
+
+      .top-nav a {
+        font-size: 0.6rem;
+        padding: 6px 7px;
+      }
+
+      .sidebar {
+        padding: 28px 18px 24px;
+      }
+
+      .profile-photo {
+        width: 132px;
+        height: 132px;
+        border-radius: 20px;
+      }
+
+      .sidebar h1 {
+        font-size: 1.28rem;
+      }
+
+      .sidebar .cargo {
+        font-size: 0.78rem;
+      }
+
+      .sidebar-section {
+        margin-bottom: 24px;
+      }
+
+      .main-content {
+        padding: 28px 18px 48px;
+      }
+
+      .section-title {
+        font-size: 1.55rem;
+        gap: 12px;
+      }
+
+      .section-title::after {
+        height: 1px;
+      }
+
+      .section-header {
+        margin-bottom: 18px;
+      }
+
+      .content-block {
+        margin-bottom: 24px;
+      }
+
+      details {
+        border-radius: 10px;
+      }
+
+      summary {
+        padding: 13px 14px;
+        font-size: 0.84rem;
+      }
+
+      .details-body {
+        padding: 16px 14px;
+      }
+
+      .publication-item {
+        margin-bottom: 18px;
+        padding-bottom: 16px;
+      }
+
+      .table-wrapper {
+        margin: 14px 0;
+      }
+
+      table {
+        font-size: 0.78rem;
+      }
+
+      th,
+      td {
+        padding: 9px;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .top-nav a {
+        font-size: 0.56rem;
+        padding: 6px 6px;
+      }
+
+      .btn-print-top {
+        font-size: 0.56rem;
+        padding: 6px 9px;
+      }
+
+      .main-content {
+        padding: 24px 15px 42px;
+      }
+
+      .section-title {
+        font-size: 1.42rem;
+      }
+
+      .block-title {
+        font-size: 1.08rem;
+      }
+
+      .block-subtitle {
+        font-size: 0.9rem;
+      }
+
+      .block-description {
+        font-size: 0.88rem;
+      }
+
+      .contact-info {
+        font-size: 0.78rem;
+      }
+    }
+
+    /* =========================================================
+   ESTILOS DE IMPRESIÓN / GUARDAR COMO PDF
+   Mantiene el diseño como se ve en pantalla:
+   - sidebar izquierda
+   - contenido principal a la derecha
+   - colores y tipografías
+   - details desplegados
+   ========================================================= */
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 8mm;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      html,
+      body {
+        width: 100% !important;
+        background: white !important;
+        color: var(--text-main) !important;
+        font-size: 8pt !important;
+        line-height: 1.42 !important;
+      }
+
+      .top-bar,
+      .btn-print-top,
+      footer {
+        display: none !important;
+      }
+
+      .app-container {
+        display: grid !important;
+        grid-template-columns: 185px 1fr !important;
+        column-gap: 28px !important;
+        align-items: start !important;
+        max-width: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+      }
+
+      .sidebar {
+        grid-column: 1 !important;
+        width: 185px !important;
+        min-width: 185px !important;
+        height: auto !important;
+        max-height: none !important;
+        position: static !important;
+        overflow: visible !important;
+        padding: 0 14px 0 0 !important;
+        border-right: 1px solid var(--border) !important;
+        border-bottom: none !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+
+      .main-content {
+        grid-column: 2 !important;
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      .profile-section {
+        margin-bottom: 18px !important;
+        text-align: center !important;
+      }
+
+      .profile-photo {
+        width: 92px !important;
+        height: 92px !important;
+        border-radius: 14px !important;
+        margin-bottom: 10px !important;
+      }
+
+      .sidebar h1 {
+        font-size: 0.92rem !important;
+        line-height: 1.05 !important;
+        margin-bottom: 6px !important;
+      }
+
+      .sidebar .cargo {
+        font-size: 0.5rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 14px !important;
+      }
+
+      .sidebar-section {
+        margin-bottom: 14px !important;
+      }
+
+      .sidebar-section h3 {
+        font-size: 0.45rem !important;
+        margin-bottom: 6px !important;
+        letter-spacing: 0.13em !important;
+      }
+
+      .contact-info {
+        font-size: 0.49rem !important;
+        line-height: 1.35 !important;
+      }
+
+      .contact-item {
+        margin-bottom: 5px !important;
+      }
+
+      .contact-item label {
+        font-size: 0.42rem !important;
+        margin-bottom: 1px !important;
+      }
+
+      .tag-cloud {
+        gap: 3px !important;
+      }
+
+      .tag {
+        font-size: 0.43rem !important;
+        padding: 2px 5px !important;
+        border-radius: 4px !important;
+      }
+
+      .sidebar-section p {
+        font-size: 0.49rem !important;
+        line-height: 1.35 !important;
+      }
+
+      section {
+        margin-bottom: 24px !important;
+        scroll-margin-top: 0 !important;
+        break-inside: auto !important;
+        page-break-inside: auto !important;
+      }
+
+      .section-header {
+        margin-bottom: 12px !important;
+      }
+
+      .section-title {
+        font-size: 1.22rem !important;
+        line-height: 1.08 !important;
+        gap: 10px !important;
+      }
+
+      .section-title::after {
+        height: 1px !important;
+      }
+
+      .content-block {
+        margin-bottom: 14px !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
+
+      .block-header {
+        display: grid !important;
+        grid-template-columns: 82px 1fr !important;
+        column-gap: 14px !important;
+        align-items: start !important;
+      }
+
+      .block-date {
+        min-width: 0 !important;
+        font-size: 0.52rem !important;
+        margin-bottom: 0 !important;
+        padding-top: 2px !important;
+      }
+
+      .block-main {
+        padding-left: 14px !important;
+        border-left: 1px solid var(--border) !important;
+      }
+
+      .block-title {
+        font-size: 0.78rem !important;
+        line-height: 1.18 !important;
+        margin-bottom: 2px !important;
+      }
+
+      .block-subtitle {
+        font-size: 0.62rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 4px !important;
+      }
+
+      .block-description {
+        font-size: 0.55rem !important;
+        line-height: 1.38 !important;
+      }
+
+      details {
+        display: block !important;
+        border: 1px solid var(--border) !important;
+        border-radius: 7px !important;
+        background: var(--bg-alt) !important;
+        margin-bottom: 10px !important;
+        break-inside: auto !important;
+        page-break-inside: auto !important;
+      }
+
+      summary {
+        display: block !important;
+        padding: 7px 10px !important;
+        font-size: 0.6rem !important;
+        color: var(--primary) !important;
+        font-weight: 800 !important;
+      }
+
+      .details-body {
+        display: block !important;
+        padding: 10px !important;
+        background: white !important;
+        border-top: 1px solid var(--border) !important;
+      }
+
+      .publication-item {
+        margin-bottom: 9px !important;
+        padding-bottom: 7px !important;
+        border-bottom: 1px solid var(--bg-alt) !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
+
+      .pub-status-pill {
+        font-size: 0.46rem !important;
+        padding: 2px 5px !important;
+        background: #ede9fe !important;
+        color: var(--primary) !important;
+        border: none !important;
+      }
+
+      .pub-title {
+        font-size: 0.6rem !important;
+        line-height: 1.3 !important;
+      }
+
+      .pub-meta {
+        font-size: 0.54rem !important;
+        line-height: 1.32 !important;
+      }
+
+      .table-wrapper {
+        overflow: visible !important;
+      }
+
+      table {
+        font-size: 0.52rem !important;
+      }
+
+      th,
+      td {
+        padding: 4px 5px !important;
+      }
+
+      a {
+        color: var(--primary) !important;
+        text-decoration: none !important;
+        border-bottom: none !important;
+      }
+
+      /* ---------------------------------------------------------
+     AJUSTE FINAL DE UNIFORMIDAD TIPOGRÁFICA EN PDF
+     Mantiene el diseño actual, pero normaliza tamaños de fuente.
+     --------------------------------------------------------- */
+
+      body {
+        font-size: 8.8pt !important;
+        line-height: 1.45 !important;
+      }
+
+      .main-content {
+        font-size: 7.4pt !important;
+      }
+
+      .section-title {
+        font-size: 15pt !important;
+        line-height: 1.1 !important;
+        letter-spacing: -0.02em !important;
+      }
+
+      .block-date {
+        font-size: 6.6pt !important;
+        line-height: 1.25 !important;
+      }
+
+      .block-title {
+        font-size: 8.8pt !important;
+        line-height: 1.22 !important;
+      }
+
+      .block-subtitle {
+        font-size: 7.2pt !important;
+        line-height: 1.25 !important;
+      }
+
+      .block-description,
+      .details-body,
+      .details-body li,
+      .publication-item,
+      .pub-meta,
+      td {
+        font-size: 7pt !important;
+        line-height: 1.42 !important;
+      }
+
+      summary {
+        font-size: 7.4pt !important;
+        line-height: 1.25 !important;
+      }
+
+      .pub-title {
+        font-size: 7.5pt !important;
+        line-height: 1.35 !important;
+      }
+
+      .pub-status-pill {
+        font-size: 5.8pt !important;
+      }
+
+      th {
+        font-size: 6.2pt !important;
+      }
+
+      .sidebar h1 {
+        font-size: 12pt !important;
+        line-height: 1.08 !important;
+      }
+
+      .sidebar .cargo {
+        font-size: 6.2pt !important;
+        line-height: 1.35 !important;
+      }
+
+      .contact-info,
+      .sidebar-section p {
+        font-size: 6pt !important;
+        line-height: 1.38 !important;
+      }
+
+      .contact-item label,
+      .sidebar-section h3 {
+        font-size: 5.2pt !important;
+      }
+
+      .tag {
+        font-size: 5.4pt !important;
+        line-height: 1.2 !important;
+      }
+
+
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="top-bar">
+    <ul class="top-nav">
+      <li><a href="#personal">Datos</a></li>
+      <li><a href="#actual">Actual</a></li>
+      <li><a href="#trayectoria">Formación</a></li>
+      <li><a href="#estadias">Estadías</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#profesional">Profesional</a></li>
+      <li><a href="#docencia">Docencia</a></li>
+      <li><a href="#publicaciones">Publicaciones</a></li>
+      <li><a href="#congresos">Congresos</a></li>
+      <li><a href="#rrhh">RRHH</a></li>
+      <li><a href="#premios">Premios</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#evaluaciones">Evaluaciones</a></li>
+      <li><a href="#idiomas">Idiomas</a></li>
+    </ul>
+    <button class="btn-print-top" onclick="window.print()">Imprimir PDF</button>
+  </header>
+
+  <div class="app-container">
+
+    <aside class="sidebar">
+      <div class="profile-section">
+        <img src="https://i.ibb.co/wZ48fbCJ/edu.jpg" alt="Dr. Eduardo Rubén Henquín" class="profile-photo">
+
+        <h1>Dr. Eduardo Rubén Henquín</h1>
+
+        <ul class="cargo cargo-list">
+          <li>Investigador Adjunto CONICET</li>
+          <li>Profesor Adjunto FIQ-UNL</li>
+          <li>Especialista en Energía, Baterías de Litio e IA Industrial</li>
+          <li>Investigador en empresa. LUNIX S.R.L. Innovación Productiva.</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Contacto y Enlaces</h3>
+        <div class="contact-info">
+          <div class="contact-item">
+            <label>Emails Institucionales</label>
+            <a href="mailto:ehenquin@santafe-conicet.gov.ar">ehenquin@santafe-conicet.gov.ar</a>
+            <a href="mailto:ehenquin@fiq.unl.edu.ar">ehenquin@fiq.unl.edu.ar</a>
+          </div>
+          <div class="contact-item">
+            <label>Email Profesional</label>
+            <a href="mailto:ehenquin@lunix.com.ar">ehenquin@lunix.com.ar</a>
+          </div>
+          <div class="contact-item">
+            <label>Email Personal</label>
+            <a href="mailto:ehenquin@gmail.com">ehenquin@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <label>Teléfono Móvil</label>
+            <a href="tel:+5493424307388">+54 9 342 4307388</a>
+          </div>
+          <div class="contact-item">
+            <label>Ubicación</label>
+            <span>Santa Fe, Argentina</span>
+          </div>
+          <div class="contact-item">
+            <label>Web</label>
+            <a href="https://ehenquin.github.io/LinkTreePro/" target="_blank">LinkTree Profesional</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Especialización</h3>
+        <div class="tag-cloud">
+          <span class="tag">Baterías de Litio</span>
+          <span class="tag">Electroquímica</span>
+          <span class="tag">Modelado Matemático</span>
+          <span class="tag">IA Industrial</span>
+          <span class="tag">Data Science</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Simulación de Procesos</span>
+          <span class="tag">Innovación Productiva</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Perfil</h3>
+        <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
+          Más de 29 años de experiencia docente e investigadora. Especialista en ingeniería electroquímica y
+          almacenamiento de energía, liderando actualmente la integración de Inteligencia Artificial para la
+          transformación industrial y optimización de procesos.
+        </p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <!-- DATOS PERSONALES -->
+      <section id="personal">
+        <div class="section-header">
+          <h2 class="section-title">Datos Personales</h2>
+        </div>
+        <div class="content-block">
+          <div class="block-main" style="border: none; padding-left: 0;">
+            <p style="font-size: 1.1rem; margin-bottom: 10px;"><strong>Apellido y Nombres:</strong> Henquín, Eduardo
+              Rubén</p>
+            <p><strong>Fecha de Nacimiento:</strong> 14/10/1973</p>
+            <p><strong>Domicilio laboral:</strong></p>
+            <ul style="list-style: none; padding-left: 20px; margin-top: 5px;">
+              <li>• INGAR: Avellaneda 3657. Santa Fe.</li>
+              <li>• LUNIX S.R.L.: Diag. España 3115 Depto 3 y 4. Santa Fe.</li>
+            </ul>
+            <!-- DNI: 23622066 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- DESEMPEÑO ACTUAL -->
+      <section id="actual">
+        <div class="section-header">
+          <h2 class="section-title">Desempeño Actual</h2>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">Desde 2011</span>
+            <div class="block-main">
+              <h3 class="block-title">Investigador Adjunto CONICET</h3>
+              <p class="block-subtitle">INGAR (Instituto de Desarrollo y Diseño)</p>
+              <p class="block-description">Categoría 4 del programa de incentivos, otorgada por la Universidad Nacional
+                del Litoral (UNL) en la convocatoria 2016.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">Desde 2011</span>
+            <div class="block-main">
+              <h3 class="block-title">Profesor Adjunto</h3>
+              <p class="block-subtitle">Facultad de Ingeniería Química – UNL</p>
+              <p class="block-description">Responsable del curso de grado "Proyecto Final" en Ingeniería en Materiales.
+                Dictado de cursos de posgrado sobre "Baterías de Litio: Tecnología y Cálculo" (2017 - 2021).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">Desde 2025</span>
+            <div class="block-main">
+              <h3 class="block-title">Investigador en Empresa</h3>
+              <p class="block-subtitle">LUNIX S.R.L.</p>
+              <p class="block-description">Líder de Proyectos de Innovación Productiva Industrial, IA y Data Science.
+                Designación bajo Convenio IF-2025-18461297-APN-DTD#JGM.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ANTECEDENTES ACADÉMICOS -->
+      <section id="trayectoria">
+        <div class="section-header">
+          <h2 class="section-title">Antecedentes Académicos</h2>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2003 – 2008</span>
+            <div class="block-main">
+              <h3 class="block-title">Doctor en Ingeniería Química</h3>
+              <p class="block-subtitle">Facultad de Ingeniería Química · U.N.L.</p>
+              <p class="block-description">Tesis: "Estudio teórico y experimental de reactores electroquímicos
+                bipolares, determinación de las corrientes parásitas y análisis de su efecto sobre la distribución de
+                corriente".</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">1994 – 2000</span>
+            <div class="block-main">
+              <h3 class="block-title">Ingeniero Químico</h3>
+              <p class="block-subtitle">Facultad de Ingeniería Química · U.N.L.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">1987 – 1993</span>
+            <div class="block-main">
+              <h3 class="block-title">Técnico Químico</h3>
+              <p class="block-subtitle">Escuela Industrial Superior (EIS) · F.I.Q. – U.N.L.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ESTADÍAS -->
+      <section id="estadias">
+        <div class="section-header">
+          <h2 class="section-title">Estadías de Investigación</h2>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2009 – 2010</span>
+            <div class="block-main">
+              <h3 class="block-title">Investigador Asociado</h3>
+              <p class="block-subtitle">National Research Council · ICPET · Ottawa, Canadá</p>
+              <p class="block-description">Proyecto: "Numerical simulation on lithium ion batteries applied in large
+                power storage". Enfoque en eficiencia energética y paneles solares.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2010 – 2011</span>
+            <div class="block-main">
+              <h3 class="block-title">Beca Posdoctoral CONICET</h3>
+              <p class="block-subtitle">PRELINE – FIQ – UNL</p>
+              <p class="block-description">Estudio de la distribución de corriente y transferencia de masa en reactores
+                electroquímicos bipolares con electrodos hundidos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2010 (Pasantía)</span>
+            <div class="block-main">
+              <h3 class="block-title">Oxidación Avanzada para Tratamiento de Aguas</h3>
+              <p class="block-subtitle">Anhalt University · Köthen, Alemania</p>
+              <p class="block-description">Programa de Cooperación entre MINCYT (Argentina) y BMBF (Alemania). Institute
+                for Energy and Environmental Protection Technologies.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2014</span>
+            <div class="block-main">
+              <h3 class="block-title">Estancia de Investigación y Docencia</h3>
+              <p class="block-subtitle">Universidad Autónoma de San Luis Potosí (UASLP) · México</p>
+              <p class="block-description">Instituto de Metalurgia. Beca del Programa MAGNA para Académicos (Movilidad
+                entre Universidades Argentinas y Mexicanas).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2017</span>
+            <div class="block-main">
+              <h3 class="block-title">Docencia y Exposición Internacional</h3>
+              <p class="block-subtitle">Energy Storage Discussions · Puebla y CDMX, México</p>
+              <p class="block-description">Organizado por la Red de Almacenamiento de Energía.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CURSOS / PERFECCIONAMIENTO -->
+      <section id="cursos">
+        <div class="section-header">
+          <h2 class="section-title">Perfeccionamiento Específico</h2>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Año</th>
+                <th>Curso / Certificación</th>
+                <th>Institución</th>
+                <th>Horas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025</td>
+                <td>Data Science III (Deep Learning)</td>
+                <td>CODERHOUSE</td>
+                <td>25 hs.</td>
+              </tr>
+              <tr>
+                <td>2024</td>
+                <td>Data Science (Machine Learning)</td>
+                <td>CODERHOUSE</td>
+                <td>250 hs.</td>
+              </tr>
+              <tr>
+                <td>2023</td>
+                <td>Data Analytics</td>
+                <td>CODERHOUSE</td>
+                <td>25 hs.</td>
+              </tr>
+              <tr>
+                <td>2012</td>
+                <td>Baterías de Litio: Principios y Tecnología</td>
+                <td>CNEA / IEDS</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>2006</td>
+                <td>Celdas de Combustible. Teoría y Aplicaciones</td>
+                <td>Posgrado FIQ-UNL</td>
+                <td>90 hs.</td>
+              </tr>
+              <tr>
+                <td>2004</td>
+                <td>Tecnología de los Procesos Electroquímicos</td>
+                <td>FIQ-UNL</td>
+                <td>120 hs.</td>
+              </tr>
+              <tr>
+                <td>2003</td>
+                <td>Ingeniería Electroquímica</td>
+                <td>Posgrado FIQ-UNL</td>
+                <td>90 hs.</td>
+              </tr>
+              <tr>
+                <td>1999</td>
+                <td>Electroquímica General</td>
+                <td>FIQ-UNL</td>
+                <td>90 hs.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ACTUACIÓN PROFESIONAL -->
+      <section id="profesional">
+        <div class="section-header">
+          <h2 class="section-title">Actuación Profesional</h2>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2025 – Actualidad</span>
+            <div class="block-main">
+              <h3 class="block-title">Líder de Proyectos de Innovación Productiva Industrial</h3>
+              <p class="block-subtitle">LUNIX Soluciones S.R.L.</p>
+              <p class="block-description">Desarrollo de soluciones basadas en Machine Learning, Deep Learning y Data
+                Science para optimizar procesos industriales. Transformación de datos en estrategias de eficiencia y
+                productividad. Convenio IF-2025-18461297-APN-DTD#JGM.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2019 – 2023</span>
+            <div class="block-main">
+              <h3 class="block-title">Delegado Técnico en Pericia Judicial</h3>
+              <p class="block-subtitle">Caso "SUAREZ v HONDA MOTOR ARGENTINA"</p>
+              <p class="block-description">Asesoramiento técnico pericial (CUIJ 21-02003741-2) enfocado en la formación
+                y explicación de fenómenos de corrosión. Demanda ganada en diciembre 2025.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2019 – 2021</span>
+            <div class="block-main">
+              <h3 class="block-title">Asesoramiento Técnico Baterías de Litio</h3>
+              <p class="block-subtitle">LITBAR · Buenos Aires</p>
+              <p class="block-description">Optimización de procesos de fabricación y diseño de celdas. Código de
+                servicio: ST4593.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <details>
+          <summary>Ver trayectoria profesional previa completa</summary>
+          <div class="details-body">
+            <ul style="list-style: none;">
+              <li style="margin-bottom: 15px;">
+                <strong>04/2018 - 11/2019:</strong> Asesoría: Desarrollo de una nueva formulación para fabricación de
+                ladrillos de hormigón compactado y alivianados. SAT Expediente 925934.
+              </li>
+
+              <li style="margin-bottom: 15px;">
+                <strong>08/2006 - 01/2008:</strong> Asesoramiento de industrias alimenticias locales.
+              </li>
+
+              <li style="margin-bottom: 15px;">
+                <strong>01/2003 - 06/2004:</strong> Microemprendimiento de producción de bases de Amargo Serrano, Cuyano
+                y Agua Tónica.
+              </li>
+
+              <li style="margin-bottom: 15px;">
+                <strong>05/2002 - 02/2004:</strong> Devor S.R.L. Producción de pastas y alimentos. Gerencia de
+                Producción y Comercialización.
+              </li>
+
+              <li style="margin-bottom: 15px;">
+                <strong>06/2000 - 05/2002:</strong> NaranPol S.A. Producción de Jugos, Gaseosas y afines. Control del
+                proceso de producción. Puesta en marcha de plantas nuevas. Formulación y desarrollo de nuevos productos
+                y procesos.
+              </li>
+
+              <li style="margin-bottom: 15px;">
+                <strong>01/2000 - 03/2000:</strong> Milkaut. Producción de lácteos. Práctica Industrial. Redacción e
+                implementación de manuales de buenas prácticas de manufactura.
+              </li>
+
+              <li>
+                <strong>08/1993 - 10/1993:</strong> Leiner. Producción de gelatinas industriales. Práctica Industrial.
+                Control de calidad de productos insumos.
+              </li>
+            </ul>
+          </div>
+        </details>
+      </section>
+
+      <!-- DESEMPEÑO DOCENTE -->
+      <section id="docencia">
+        <div class="section-header">
+          <h2 class="section-title">Desempeño Docente</h2>
+        </div>
+
+        <p style="margin-bottom: 30px; font-weight: 700; color: var(--primary);">
+          Más de 29 años de experiencia en educación técnica, universitaria, formación de grado, posgrado y capacitación
+          docente.
+        </p>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">Desde 01/12/2011</span>
+            <div class="block-main">
+              <h3 class="block-title">Profesor Adjunto</h3>
+              <p class="block-subtitle">Facultad de Ingeniería Química – UNL</p>
+              <p class="block-description">
+                Curso de Grado: Proyecto Final. Ingeniería en Materiales. Desde: 01/12/2011.
+              </p>
+              <p class="block-description">
+                Curso de posgrado: Baterías de Litio. Tecnología y Cálculo. FIQ-UNL. 2017 - 2021.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <details open>
+          <summary>Ver historial docente completo</summary>
+          <div class="details-body">
+            <ul style="list-style: none;">
+
+              <li style="margin-bottom: 18px;">
+                <strong>1) Escuela Industrial Superior. FIQ – UNL.</strong><br>
+                Profesor hs. cátedras. 6to Año. Tecnología Electroquímica.
+                03/2008 - 03/2009. 03/2010 - 08/2015.
+              </li>
+
+              <li style="margin-bottom: 18px;">
+                <strong>2) Profesor Adjunto. Facultad de Humanidades y Ciencias – UNL.</strong><br>
+                Dedicación simple. Física III, Lic. en Sonido y Grabación. ISM.
+                01/07/2013 - 31/03/2015.
+              </li>
+
+              <li style="margin-bottom: 18px;">
+                <strong>3) Ayudante de Primera. Instituto Superior de Música. ISM - FHuC – UNL.</strong><br>
+                Dedicación simple. Física III.
+                01/06/2011 - 30/06/2013.
+              </li>
+
+              <li style="margin-bottom: 18px;">
+                <strong>4) Docente Tutor de los cursos de Ingreso UNL 2013. Matemática.</strong><br>
+                Dictado de clases en 2 comisiones. FICH – UNL.
+                02/2013 - 03/2013.
+              </li>
+
+              <li style="margin-bottom: 18px;">
+                <strong>5) Jefe de Trabajos Prácticos. FIQ – UNL. Departamento de Materiales.</strong><br>
+                Ingeniería Electroquímica, Tecnología de los Procesos Electroquímicos, Corrosión.
+                06/2011.
+                <br>
+                <em style="color: var(--text-muted);">
+                  Designación no asumida por razones administrativas internas del departamento.
+                </em>
+              </li>
+
+              <li style="margin-bottom: 18px;">
+                <strong>6) Ayudante de TP de 1era. Universidad Tecnológica Nacional. Facultad Regional Santa
+                  Fe.</strong><br>
+                Dedicación simple. Departamento de Física.
+                01/05/2008 – 31/03/2009.
+              </li>
+
+              <li style="margin-bottom: 18px;">
+                <strong>7) Jefe de Trabajos Prácticos. FIQ – UNL. Departamento de Física.</strong><br>
+                Dedicación simple. Otorgado a través del programa PROMEI del Departamento.
+                Pedido de designación: 27/04/06. Expediente FIQ Nº: 230.752-F.
+                Sin nombramiento por recorte presupuestario.
+              </li>
+
+              <li style="margin-bottom: 18px;">
+                <strong>8) Docente Capacitador. Área: Química.</strong><br>
+                60 hs. 17/03/2005 - 30/11/2005. RM 706/05.
+                <br>
+                Proyecto: Articulación General y Disciplinar de Preparación para la Continuidad de Estudios Superiores.
+                Red Federal de Formación Docente Continua. Ministerio de Educación de la Provincia de Santa Fe – UNL.
+              </li>
+
+              <li style="margin-bottom: 18px;">
+                <strong>9) Docente Capacitador. Área: Química.</strong><br>
+                60 hs. 21/08/2004 - 30/11/2004. RM: 781/04.
+                <br>
+                Proyecto: Articulación General y Disciplinar de Preparación para la Continuidad de Estudios Superiores.
+                Red Federal de Formación Docente Continua. Ministerio de Educación de la Provincia de Santa Fe – UNL.
+              </li>
+
+              <li style="margin-bottom: 18px;">
+                <strong>10) Auxiliar docente de TP de 2da. FIQ – UNL.</strong><br>
+                Dedicación simple. Departamento de Física.
+                21/10/1996 – 01/09/2000.
+              </li>
+
+              <li style="margin-bottom: 18px;">
+                <strong>11) Profesor titular – horas cátedras.</strong><br>
+                <strong>Escuela de Educación Polimodal Part. Aut. Nº 3108 “San Roque”.</strong>
+                <ul style="margin-top: 8px; margin-left: 22px;">
+                  <li>2do Año. Matemática I. Área: Contable. 04 horas cátedras. 04/03/2002 – 04/03/2003.</li>
+                  <li>3er Año. Proc. Prod. Área: Cs. Naturales. 03 horas cátedras. 04/03/2002 – 01/05/2005.</li>
+                  <li>1er Año. Física I. Área: Cs. Naturales. 04 horas cátedras. 04/03/2002 – 01/05/2005.</li>
+                  <li>3er Año. Mat. Aplicada. Área: Cs. Naturales. 03 horas cátedras. 04/03/2002 – 01/05/2005.</li>
+                </ul>
+              </li>
+
+              <li style="margin-bottom: 18px;">
+                <strong>Escuela Particular Incorporada Nº 1144 “San Roque”.</strong>
+                <ul style="margin-top: 8px; margin-left: 22px;">
+                  <li>3er Ciclo de la E.G.B. Tecnología. 04 horas cátedras. 01/07/2002 – 31/08/2003.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Escuela de Educación Técnica Part. Incorporada Nº 2025 “Ceferino Namuncurá”.</strong>
+                <ul style="margin-top: 8px; margin-left: 22px;">
+                  <li>3er Ciclo de la E.G.B. Tecnología. 12 horas cátedras.</li>
+                  <li>Tiempo de desempeño: 09/03/1998 – 01/03/2004.</li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </details>
+      </section>
+
+      <!-- PUBLICACIONES -->
+      <section id="publicaciones">
+        <div class="section-header">
+          <h2 class="section-title">Publicaciones Científicas</h2>
+        </div>
+
+        <details>
+          <summary>En preparación y en etapa de envío</summary>
+          <div class="details-body">
+
+            <span class="pub-status-pill">En preparación (2028 / 2027)</span>
+
+            <div class="publication-item">
+              <span class="pub-title">Phenomenological simplified model to predict phase change in charge/discharge
+                LiPO4Fe.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">E. R. Henquín.</span>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Impedance transfer function to kinetically evaluate variations in LiFePO4
+                compositions for Li-ion batteries.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">Eduardo Rubén Henquín, Jorge Vazquez-Arenas.</span>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Semi empirical investigation of secondary current density distribution, and
+                kinetic variables to improve Cr(III) removal efficiency in an electro-precipitation reactor.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">Beatriz Bonola, Eduardo R. Henquín, Fabiola S. Sosa-Rodríguez, Jorge
+                  Vazquez-Arenas.</span>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Theoretical and Experimental Study of the Secondary Current Distribution in
+                Parallel-Plate Electrochemical Reactors.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">Eduardo Rubén Henquín, Fernando Felipe Rivera Iturbe.</span>
+                <span class="pub-journal">Journal of Chemical Education.</span>
+              </p>
+            </div>
+
+            <span class="pub-status-pill">En etapa de envío (2026)</span>
+
+            <div class="publication-item">
+              <span class="pub-title">A review of continuum mathematical modeling accounting for the
+                insertion/deinsertion behavior of LiFePO4 cathodes utilized in Li-ion batteries.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">Jorge Vázquez-Arenas, Eduardo R. Henquín y Alberto Luviano-Juárez.</span>
+              </p>
+            </div>
+
+          </div>
+        </details>
+
+        <details>
+          <summary>Publicaciones científicas publicadas</summary>
+          <div class="details-body">
+
+            <div class="publication-item">
+              <span class="pub-title">Selective defluoridation by EDI in a mixed bed in well water.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">Magali Tenorio-Martínez, Eduardo R. Henquín, Amanda Garzón-Pérez, Israel
+                  Rodríguez Torres.</span>
+                <span class="pub-journal">Environmental Surfaces and Interfaces, Volume 4, December 2026, Pages
+                  235-248.</span>
+                <br><a href="https://doi.org/10.1016/j.esi.2026.02.006" target="_blank">DOI:
+                  10.1016/j.esi.2026.02.006</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Generalized Algebraic Phenomenological Model for Parallel-Plate Bipolar
+                Electrochemical Reactors.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">E. R. Henquín.</span>
+                <span class="pub-journal">2023 J. Electrochem. Soc. 170 103507.</span>
+                <br><a href="https://doi.org/10.1149/1945-7111/ad0074" target="_blank">DOI: 10.1149/1945-7111/ad0074</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">The influence of cathode material, current density and pH on the rapid Cr(III)
+                removal from real tanning effluents via electro-precipitation.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">Beatriz Elena Bonola, Fabiola S. Sosa-Rodríguez, Eduardo Rubén Henquín, Issis
+                  Romero-Ibarra, Jorge Vazquez-Arenas.</span>
+                <span class="pub-journal">2021. Journal of Hazardous Materials Advances.</span>
+                <br><a href="https://doi.org/10.1016/j.hazadv.2021.100008" target="_blank">DOI:
+                  10.1016/j.hazadv.2021.100008</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Simplified electrochemical model to account for different active/inactive cathode
+                compositions in Li-ion batteries.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">Ilda Santos-Mendoza, Eduardo Henquín, Jorge Vazquez-Arenas, and Pio
+                  Aguirre.</span>
+                <span class="pub-journal">Journal of Energy Storage 31 (2020) 101579.</span>
+                <br><a href="https://doi.org/10.1016/j.est.2020.101579" target="_blank">DOI:
+                  10.1016/j.est.2020.101579</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Modelling of swelling of PVA hydrogels considering non-ideal mixing behaviour of
+                PVA and water.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">Jorge I. Daza Agudelo, María R. Ramirez, Eduardo R. Henquin and Ignacio
+                  Rintoul.</span>
+                <span class="pub-journal">B. J. Mater. Chem. B, 2019, 7, 4049.</span>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Optimal Design and Discharge Operation of Lithium-Ion Whole-Cell.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">Corina E. Aimo, Eduardo R. Henquín, Pío A. Aguirre.</span>
+                <span class="pub-journal">Journal of Energy Storage Volume 24, August 2019, 100786.</span>
+                <br><a href="https://dx.doi.org/10.1016/j.est.2019.100786" target="_blank">DOI:
+                  10.1016/j.est.2019.100786</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">General Simplified Model to Calculate Current Distribution in Electrochemical
+                Reactors with N Bipolar Electrodes.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">I. Rodríguez-Torres and E. R. Henquín.</span>
+                <span class="pub-journal">J. Electrochem. Soc. 2019 volume 166, issue 8, E201-E211.</span>
+                <br><a href="https://dx.doi.org/10.1149/2.1291906jes" target="_blank">DOI: 10.1149/2.1291906jes</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Model Based Analysis of Lithium Batteries Considering Particle Size
+                Distribution.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">E. R. Henquín, P. A. Aguirre.</span>
+                <span class="pub-journal">AIChE J., 64: 904-915.</span>
+                <br><a href="https://doi.org/10.1002/aic.15990" target="_blank">DOI: 10.1002/aic.15990</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Phenomenological Model-Based Analysis of Lithium Batteries. Discharge, Charge,
+                Relaxation Times Studies. Cycles Analysis.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">Eduardo R. Henquín, Pio A. Aguirre.</span>
+                <span class="pub-journal">AIChE Journal. 61. (1). 90–102 January 2015.</span>
+                <br><a href="https://doi.org/10.1002/aic.14618" target="_blank">DOI: 10.1002/aic.14618</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Higher-capacity lithium ion battery chemistries for improved residential energy
+                storage with micro-cogeneration.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">K. Darcovich, E. R. Henquin, B. Kenney, I. J. Davidson, N. SaldanhabI,
+                  Beausoleil-Morrison.</span>
+                <span class="pub-journal">Applied Energy, 111 853-861 (2013).</span>
+                <br><a href="https://doi.org/10.1016/j.apenergy.2013.03.088" target="_blank">DOI:
+                  10.1016/j.apenergy.2013.03.088</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Characterization of a bipolar parallel plate electrochemical reactor for water
+                disinfection using low conductivity drinking water.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">E. R. Henquín, A. N. Colli, M. E. H. Bergmann, J. M. Bisang.</span>
+                <span class="pub-journal">Chemical Engineering and Processing 65 (2013) 45– 52.</span>
+                <br><a href="https://doi.org/10.1016/j.cep.2012.12.007" target="_blank">DOI:
+                  10.1016/j.cep.2012.12.007</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Theoretical and experimental study of the primary current distribution in parallel
+                plate electrochemical reactor.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">Armando I. Vazquez Aranda, Eduardo R. Henquín, Israel Rodríguez Torres, José
+                  M. Bisang.</span>
+                <span class="pub-journal">J. Chem. Educ., 2012, 89 (1), pp 163–167.</span>
+                <br><a href="https://doi.org/10.1021/ed200170v" target="_blank">DOI: 10.1021/ed200170v</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Performance of a multipurpose research electrochemical reactor.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">E. R. Henquín, J. M. Bisang.</span>
+                <span class="pub-journal">Electrochimica Acta. 56 (2011) 5926-5932.</span>
+                <br><a href="https://doi.org/10.1016/j.electacta.2011.04.115" target="_blank">DOI:
+                  10.1016/j.electacta.2011.04.115</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Comparison between Primary and Secondary Current Distributions in Bipolar
+                Electrochemical Reactors.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">E. R. Henquín, J. M. Bisang.</span>
+                <span class="pub-journal">Journal of Applied Electrochemistry. (2009) 1755-1762.</span>
+                <br><a href="https://doi.org/10.1007/s10800-009-9874-6" target="_blank">DOI:
+                  10.1007/s10800-009-9874-6</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Effect of leakage currents on the secondary current distribution in bipolar
+                electrochemical reactors.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">E. R. Henquín, J. M. Bisang.</span>
+                <span class="pub-journal">Journal of Applied Electrochemistry 38 (2008) 1259-1267.</span>
+                <br><a href="https://doi.org/10.1007/s10800-008-9550-2" target="_blank">DOI:
+                  10.1007/s10800-008-9550-2</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Effect of leakage currents on the primary current distribution in bipolar
+                electrochemical reactors.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">E. R. Henquín, J. M. Bisang.</span>
+                <span class="pub-journal">Journal of Applied Electrochemistry 37 (2007) 877–886.</span>
+                <br><a href="https://doi.org/10.1007/s10800-007-9324-2" target="_blank">DOI:
+                  10.1007/s10800-007-9324-2</a>
+              </p>
+            </div>
+
+            <div class="publication-item">
+              <span class="pub-title">Simplified model to predict the effect of the leakage current on primary and
+                secondary current distributions in electrochemical reactors with a bipolar electrode.</span>
+              <p class="pub-meta">
+                <span class="pub-authors">E. R. Henquín, J. M. Bisang.</span>
+                <span class="pub-journal">Journal of Applied Electrochemistry 35 (2005) 1183-1190.</span>
+                <br><a href="https://doi.org/10.1007/s10800-005-9029-3" target="_blank">DOI:
+                  10.1007/s10800-005-9029-3</a>
+              </p>
+            </div>
+
+          </div>
+        </details>
+      </section>
+
+      <!-- CONGRESOS -->
+      <section id="congresos">
+        <div class="section-header">
+          <h2 class="section-title">Congresos, Simposios y Meetings</h2>
+        </div>
+
+        <details>
+          <summary>Trabajos presentados en congresos, simposios y meetings (últimos 10 años)</summary>
+          <div class="details-body">
+            <ul style="list-style: none;">
+
+              <li class="publication-item">
+                <strong>05/2021:</strong> La importancia del diseño de dispositivos electroquímicos mediante modelado
+                matemático cuantitativo. Seminarios CIDETEQ. Querétaro. México.
+              </li>
+
+              <li class="publication-item">
+                <strong>09/2021:</strong> "Ventajas del diseño simplificado y robusto de baterías de iones de litio".
+                Foro Tecnologías para el Almacenamiento de Energía 2021, que se llevará a cabo en modalidad en línea, en
+                el marco del XXX Aniversario del Centro de Investigación y Desarrollo Tecnológico en Electroquímica
+                (CIDETEQ).
+              </li>
+
+              <li class="publication-item">
+                <strong>10/2021:</strong> “Reciclado De Plásticos De Residuos Urbanos Para Materiales De Construcción”.
+                Encuentro Argentino y Latinoamericano de Ingeniería. 5° Congreso Argentino de Ingeniería (CADI), 11°
+                Congreso Argentino de Enseñanza de la Ingeniería (CAEDI), 3° Congreso Latinoamericano de Ingeniería
+                (CLADI). CONFEDI - Consejo Federal de Decanos de Ingeniería.
+              </li>
+
+              <li class="publication-item">
+                <strong>2021:</strong> FABRICACIÓN DE MATERIALES DE CONSTRUCCIÓN A PARTIR DEL RECICLADO DE PLÁSTICOS
+                PROVENIENTES DE RESIDUOS URBANOS. Semana de Ingeniería de la Producción Sudamericana (SEPROSUL 2021 -
+                XX). El Núcleo Disciplinario Ingeniería Mecánica y de la Producción de la Asociación de Universidades
+                Grupo Montevideo (AUGM). Rosetti Germán. Eduardo Rubén Henquín.
+              </li>
+
+              <li class="publication-item">
+                <strong>07/2020:</strong> SUSPENDIDO POR COVID-19. INGENIERÍA ELECTROQUÍMICA: desde el esquema de
+                laboratorio al reactor industrial. XXII CECEMM. Congreso de Estudiantes de Ciencia e Ingeniería de
+                Materiales del Mercosur. Blumenau, Santa Catarina.
+              </li>
+
+              <li class="publication-item">
+                <strong>20-27/11/2017:</strong> Technological design of lithium batteries: from the phenomenological
+                scale to the applications. Keynote speaker of Energy Storage Discussions 2017. Puebla, México.
+              </li>
+
+              <li class="publication-item">
+                <strong>03/2017:</strong> Solar micro-generation and accumulation in Lithium ion batteries. Simplified
+                phenomenological model. Henquín, E.R. y Aguirre, P.A. 20th Topical Meeting of the International Society
+                of Electrochemistry. Buenos Aires, Argentina.
+              </li>
+
+              <li class="publication-item">
+                <strong>03/2017:</strong> Reactors with N+1 bipolar electrode. simplified mathematical model. Henquín,
+                E.R. 20th Topical Meeting of the International Society of Electrochemistry. Buenos Aires, Argentina.
+              </li>
+
+            </ul>
+          </div>
+        </details>
+
+        <details id="divulgacion">
+          <summary>Otras publicaciones, divulgación y material didáctico</summary>
+          <div class="details-body">
+            <ul style="list-style: none;">
+
+              <li class="publication-item">
+                <strong>2014:</strong> Notas Del Curso: Distribución secundaria de corriente en dispositivos
+                electroquímicos. Reactores y baterías.
+                <br>
+                <a href="http://bit.ly/2zPf3nl" target="_blank">http://bit.ly/2zPf3nl</a>
+                <br>
+                Curso dictado en la Estancia de Investigación y Docencia. Instituto de Metalurgia de la Universidad
+                Autónoma de San Luis Potosí (UASLP), México. MAGNA Programa de Movilidad de Académicos y Gestores México
+                Argentina. 15/09/2014 - 15/10/2014.
+              </li>
+
+              <li class="publication-item">
+                <strong>Agosto 2004:</strong> Articulación general y disciplinar de preparación para la continuidad de
+                estudios superiores.
+                <br>
+                Dr. Daniel Alsina. Ing. Edgardo Cagnola. Bioq. René Güemes. Ing. Eduardo Henquín. Ing. Pablo
+                L´Argentiere. Mag. Juan Carlos Noseda. Mag. Hector Odetti.
+                <br>
+                Publicación Escrita en forma de cuadernillo. Cursos de Formación Docente. Ministerio de Educación de la
+                Provincia de Santa Fe – Universidad Nacional del Litoral. Santa Fe. Argentina.
+              </li>
+
+              <li class="publication-item">
+                <strong>Julio 2005:</strong> Articulación general y disciplinar de preparación para la continuidad de
+                estudios superiores.
+                <br>
+                Dr. Daniel Alsina. Ing. Edgardo Cagnola. Bioq. René Güemes. Ing. Eduardo Henquín. Mag. Juan Carlos
+                Noseda. Mag. Hector Odetti.
+                <br>
+                Publicación Escrita en forma de cuadernillo. Cursos de Formación Docente. Ministerio de Educación de la
+                Provincia de Santa Fe – Universidad Nacional del Litoral. Santa Fe. Argentina.
+              </li>
+
+            </ul>
+          </div>
+        </details>
+      </section>
+
+      <!-- FORMACIÓN DE RRHH -->
+      <section id="rrhh">
+        <div class="section-header">
+          <h2 class="section-title">Formación de RRHH</h2>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Año</th>
+                <th>Estudiante</th>
+                <th>Tema del Proyecto Final de Grado / Dirección</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025</td>
+                <td>Gerónimo Patat</td>
+                <td>Planta de microfusión. A rendir 2027.</td>
+              </tr>
+              <tr>
+                <td>2021</td>
+                <td>Martina Camaño Erhardt</td>
+                <td>Desarrollo de mortero a base de cal para el tratamiento de humedades de ascenso capilar.</td>
+              </tr>
+              <tr>
+                <td>2021</td>
+                <td>Carlos Vertiz del Valle y José Ignacio Jerkovich</td>
+                <td>Producción de Emulsiones Álcali Solubles.</td>
+              </tr>
+              <tr>
+                <td>2020</td>
+                <td>Augusto Lautaro Destefano y Hugo Mauro Ortiz</td>
+                <td>Planta Industrial de Perfiles de Aluminio Anodizado Para Fines Arquitectónicos.</td>
+              </tr>
+              <tr>
+                <td>2019</td>
+                <td>Federico Ortiz de Zàrate</td>
+                <td>Reutilización de residuos plásticos de la ciudad de Santa Fe para producción de bloques de hormigón.
+                </td>
+              </tr>
+              <tr>
+                <td>2018</td>
+                <td>Luciano Benitez</td>
+                <td>Fabricación de Películas Biorientadas de Pet con Contenido de Rpet.</td>
+              </tr>
+              <tr>
+                <td>2017</td>
+                <td>Gabriela Bastida</td>
+                <td>Fundición tecno – sustentable de bronce. </td>
+              </tr>
+              <tr>
+                <td>2017</td>
+                <td>Peralta, Matías Eduardo</td>
+                <td>Laboratorio Industrial de Servicios y Ensayos para Materiales Poliméricos.</td>
+              </tr>
+              <tr>
+                <td>2017</td>
+                <td>Suarez Natalia Edith</td>
+                <td>Codirección Final de Proyecto.</td>
+              </tr>
+              <tr>
+                <td>2016</td>
+                <td>Iglesias María Celeste</td>
+                <td>Producción Industrial de Nanocelulosa Fibrilar.</td>
+              </tr>
+              <tr>
+                <td>2016</td>
+                <td>Hugo Andrés Castaño Y Natalia Edith Suárez</td>
+                <td>Planta Piloto de Polvo de Aerogel de Sílice Hidrófobo.</td>
+              </tr>
+              <tr>
+                <td>2016</td>
+                <td>Camila Camaño Erhardt</td>
+                <td>Planta Recubrimientos superficiales de DLC para pernos de pistón.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- EXPOSICIÓN -->
+      <section id="exposicion">
+        <div class="section-header">
+          <h2 class="section-title">Actividades de Exposición</h2>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2022</span>
+            <div class="block-main">
+              <h3 class="block-title">Estrategias Energéticas Globales</h3>
+              <p class="block-subtitle">Foro de Ambiente · Concejo Municipal de la Ciudad de Santa Fe</p>
+              <p class="block-description">
+                Enfoques científicos y técnicos de las estrategias energéticas futuras. Foro de Ambiente: "estrategias
+                Energéticas Globales". Septiembre 2022.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2021</span>
+            <div class="block-main">
+              <h3 class="block-title">Diseño de dispositivos electroquímicos mediante modelado matemático cuantitativo
+              </h3>
+              <p class="block-subtitle">Seminarios CIDETEQ · Querétaro, México</p>
+              <p class="block-description">
+                La importancia del diseño de dispositivos electroquímicos mediante modelado matemático cuantitativo.
+                Mayo 2021.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2017</span>
+            <div class="block-main">
+              <h3 class="block-title">Distribución de densidades de corriente en reactores electroquímicos</h3>
+              <p class="block-subtitle">Instituto Politécnico Nacional · México</p>
+              <p class="block-description">
+                La importancia de la distribución de densidades de corrientes en el diseño de reactores electroquímicos:
+                el caso de unidades bipolares. Unidad Profesional Interdisciplinaria en Ingeniería y Tecnologías
+                Avanzadas, DF, México. 22 de noviembre de 2017.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2017</span>
+            <div class="block-main">
+              <h3 class="block-title">Seminario de Electroquímica</h3>
+              <p class="block-subtitle">Escuela Normal Superior Nº32 "Gral. José de San Martín"</p>
+              <p class="block-description">
+                Seminario de Electroquímica dictado los días 14, 18, 26 y 29 de septiembre de 2017. Duración: 12 horas
+                reloj.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2017</span>
+            <div class="block-main">
+              <h3 class="block-title">Tecnópolis Federal: Energías Alternativas</h3>
+              <p class="block-subtitle">Santa Fe - Paraná</p>
+              <p class="block-description">
+                Participación en Tecnópolis Federal: Energías Alternativas. Baterías de Litio y VPP´s. Santa Fe -
+                Paraná. 05 al 27 de junio de 2017.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2017 - 2018</span>
+            <div class="block-main">
+              <h3 class="block-title">Curso de posgrado: Baterías de Litio. Tecnología y Cálculo</h3>
+              <p class="block-subtitle">Doctorado en Ingeniería Química y Doctorado en Energía y Materiales Avanzados
+              </p>
+              <p class="block-description">
+                Profesor del curso de posgrado BATERÍAS DE LITIO. TECNOLOGÍA Y CÁLCULO. Curso de 45 horas de cursado
+                obligatorio, dictado en segundo cuatrimestre 2017-2018.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PREMIOS -->
+      <section id="premios">
+        <div class="section-header">
+          <h2 class="section-title">Premios y Distinciones</h2>
+        </div>
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2024</span>
+            <div class="block-main">
+              <h3 class="block-title">ECS-IOP Trusted Reviewer status</h3>
+              <p class="block-subtitle">The Electrochemical Society</p>
+            </div>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2017</span>
+            <div class="block-main">
+              <h3 class="block-title">INNOVAR 2017</h3>
+              <p class="block-subtitle">Concurso Nacional de Innovaciones</p>
+              <p class="block-description">Energías Alternativas. Proyecto: Programación de placas para el control de
+                operaciones de baterías de litio destinadas a construcción de virtual power plants.</p>
+            </div>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2008</span>
+            <div class="block-main">
+              <h3 class="block-title">Beca Instituto Balseiro</h3>
+              <p class="block-subtitle">Centro Atómico Bariloche – CNEA</p>
+              <p class="block-description">Obtenida por antecedentes curriculares y por el fomento de actividades de
+                extensión en el alumnado.</p>
+            </div>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2006</span>
+            <div class="block-main">
+              <h3 class="block-title">Best Poster Contest XVII SIBAE</h3>
+              <p class="block-subtitle">Sociedad Iberoamericana de Electroquímica</p>
+              <p class="block-description">Premio otorgado en La Plata. Distinción de la UNL en reconocimiento al Mejor
+                Poster (12/2006).</p>
+            </div>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2005</span>
+            <div class="block-main">
+              <h3 class="block-title">Beca Parcial HYFUSEN</h3>
+              <p class="block-subtitle">Instituto de Energía y Desarrollo Sustentable</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROYECTOS I+D -->
+      <section id="proyectos">
+        <div class="section-header">
+          <h2 class="section-title">Proyectos I+D y Convenios</h2>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2021 – 2024</span>
+            <div class="block-main">
+              <h3 class="block-title">Construcción de un modelo de gestión para el proceso de desarrollo de productos
+              </h3>
+              <p class="block-subtitle">Sector Metalmecánico · Empresas basadas en proyectos</p>
+              <p class="block-description">Código: 50620190100030li.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2019</span>
+            <div class="block-main">
+              <h3 class="block-title">ST4593: Asesoramiento técnico en fabricación de baterías de litio</h3>
+              <p class="block-subtitle">Contratante: LITBAR · Lomas del Mirador, Buenos Aires</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2018 – 2019</span>
+            <div class="block-main">
+              <h3 class="block-title">Desarrollo de una nueva formulación para ladrillos de hormigón compactado</h3>
+              <p class="block-subtitle">SAT Expediente 925934 · Agencia Santafesina de Ciencia</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2014 – 2016</span>
+            <div class="block-main">
+              <h3 class="block-title">Sistemas de generación y almacenamiento de hidrógeno como vector energético</h3>
+              <p class="block-subtitle">PIP CONICET Nº 608 · Investigador (50%)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2011</span>
+            <div class="block-main">
+              <h3 class="block-title">Modelado y métodos de optimización aplicados a problemáticas en energías</h3>
+              <p class="block-subtitle">CAI+D 2011 · Investigador GR · 50120110100406</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <div class="block-header">
+            <span class="block-date">2010 – 2012</span>
+            <div class="block-main">
+              <h3 class="block-title">Lithium Ion Battery Model and Simulation for PHEV Control Systems</h3>
+              <p class="block-subtitle">NRC Canada · ICPET / Magna Advanced Technologies</p>
+              <p class="block-description">Función: Investigador Responsable.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EVALUACIONES -->
+      <section id="evaluaciones">
+        <div class="section-header">
+          <h2 class="section-title">Evaluaciones</h2>
+        </div>
+
+        <details>
+          <summary>Evaluación institucional y de tesis</summary>
+          <div class="details-body">
+
+            <ul style="list-style: none;">
+
+              <li class="publication-item">
+                <strong>2017-2018:</strong> Acreditación de la carrera de Ingeniería en Materiales de la Facultad de
+                Ingeniería Química de la Universidad Nacional del Litoral. Expediente nº FIQ-0887 422-17.
+              </li>
+
+              <li class="publication-item">
+                <strong>2021:</strong> Evaluación de tesis: <em>Viabilidad del uso del hidrógeno como sistema de
+                  almacenamiento de energía eléctrica en el contexto colombiano</em>. Tesis Final de Carrera. Ever
+                Javier Berrío Castro. Facultad de Minas; Sede Medellín; Universidad Nacional de Colombia.
+              </li>
+
+            </ul>
+
+          </div>
+        </details>
+
+        <details>
+          <summary>Evaluación de trabajos científicos</summary>
+          <div class="details-body">
+
+            <ul style="list-style: none;">
+
+              <li class="publication-item">
+                <strong>2014:</strong> Manuscript Number: ISE13-04b-06. <em>Critical appraisal on the role of catalysts
+                  for the oxygen reduction reaction in lithium-air batteries.</em> Article Type: SI: 2013 ISE MTG
+                Querétaro.
+              </li>
+
+              <li class="publication-item">
+                <strong>2015:</strong> JIT2015 10 MATER. Universidad Tecnológica Nacional, Facultad Regional Venado
+                Tuerto, JIT2015.
+              </li>
+
+              <li class="publication-item">
+                <strong>2015:</strong> JIT2015 60 MATER. Universidad Tecnológica Nacional, Facultad Regional Venado
+                Tuerto, JIT2015.
+              </li>
+
+              <li class="publication-item">
+                <strong>2016:</strong> Manuscript Number: JECE-D-16-00637. Journal of Environmental Chemical.
+              </li>
+
+              <li class="publication-item">
+                <strong>2017:</strong> AIChE-17-18968. AIChE Journal.
+              </li>
+
+              <li class="publication-item">
+                <strong>2017:</strong> EST_2017_140. Journal of Energy Storage.
+              </li>
+
+              <li class="publication-item">
+                <strong>2017:</strong> POWER-D-17-05892. Journal of Power Sources.
+              </li>
+
+              <li class="publication-item">
+                <strong>2018:</strong> POWER-D-17-06389. Journal of Power Sources.
+              </li>
+
+              <li class="publication-item">
+                <strong>2018:</strong> POWER-D-18-02283. Journal of Power Sources.
+              </li>
+
+              <li class="publication-item">
+                <strong>2018:</strong> EST_2018_336. Journal of Energy Storage.
+              </li>
+
+              <li class="publication-item">
+                <strong>2018:</strong> POWER-D-18-03998. Journal of Power Sources.
+              </li>
+
+              <li class="publication-item">
+                <strong>2019:</strong> POWER-D-19-02781. ISSN: 0378-7753 - Journal of Power Sources.
+              </li>
+
+              <li class="publication-item">
+                <strong>2019:</strong> MS #JESP-19-1118. ISSN: 0013-4651 - Journal of The Electrochemical Society.
+              </li>
+
+              <li class="publication-item">
+                <strong>2019:</strong> Evaluación de trabajo en congreso. XVIII Reunión de Trabajo en Procesamiento de
+                la Información y Control. XVIII Workshop on Information Processing and Control. Universidad Nacional del
+                Sur (UNS). Paper id: 87.
+              </li>
+
+              <li class="publication-item">
+                <strong>2019:</strong> ie-2019-05185c. Industrial & Engineering Chemistry Research.
+              </li>
+
+              <li class="publication-item">
+                <strong>2020:</strong> POWER-D-20-02155. Journal of Power Sources.
+              </li>
+
+              <li class="publication-item">
+                <strong>2021:</strong> ESPR-D-21-01547. Environmental Science and Pollution Research.
+              </li>
+
+              <li class="publication-item">
+                <strong>2021:</strong> Manuscript # AIChE-21-23939. AIChE Journal.
+              </li>
+
+              <li class="publication-item">
+                <strong>2022:</strong> JELECHEM-S-22-02450. Journal of Electroanalytical Chemistry.
+              </li>
+
+              <li class="publication-item">
+                <strong>2022:</strong> ESPR-D-22-08576. International Journal of Environmental Science and Technology.
+              </li>
+
+              <li class="publication-item">
+                <strong>2023:</strong> EST-D-23-00246. Journal of Energy Storage.
+              </li>
+
+              <li class="publication-item">
+                <strong>2024:</strong> JES-111678. Journal of The Electrochemical Society.
+              </li>
+
+              <li class="publication-item">
+                <strong>2024:</strong> AMP2-24-0044.R1. Journal of Advanced Manufacturing and Processing.
+              </li>
+
+              <li class="publication-item">
+                <strong>2024:</strong> ESPR-D-24-02349. Environmental Science and Pollution Research.
+              </li>
+
+            </ul>
+
+          </div>
+        </details>
+
+        <details>
+          <summary>Evaluación de proyectos de I+D y programas científicos</summary>
+          <div class="details-body">
+
+            <ul style="list-style: none;">
+
+              <li class="publication-item">
+                <strong>2025:</strong> Evaluación de proyectos de investigación estratégica – CONICET. Participación
+                como Especialista Externo en la Convocatoria PIET-R 2025, mediante la elaboración de un informe
+                técnico-académico sobre un proyecto del área Energía / Almacenamiento referido a baterías de litio,
+                nuevos materiales y testeo de celdas comerciales. Certificación emitida por el Directorio del CONICET el
+                03/10/2025.
+              </li>
+
+              <li class="publication-item">
+                <strong>ANPCyT:</strong> Evaluación PICT - PICT-2016-0216.
+              </li>
+
+              <li class="publication-item">
+                <strong>Consejo Nacional de Ciencia y Tecnología de Paraguay / OEI:</strong> Participación como
+                evaluador externo de proyectos de investigación en convocatorias gestionadas por el Consejo Nacional de
+                Ciencia y Tecnología de Paraguay, en articulación con la Organización de Estados Iberoamericanos para la
+                Educación, la Ciencia y la Cultura (OEI).
+                <br><br>
+                <strong>Cada código consignado a continuación corresponde a un proyecto evaluado en forma
+                  independiente:</strong>
+                <br>
+                PINV18-739; PINV18-760; PINV18-822; PINV18-842; PINV18-892; PINV18-580; PINV18-422; PINV18-710;
+                PINV18-712; PINV18-762; PINV18-168; PINV18-473; PINV18-1327; PINV18-247; PINV18-378; PINV18-667;
+                PINV18-767; PINV18-819; 14-INV-086; PINV15-53; G4(INVG04) 14-INV-087; BPIN20-268; BPIN20-161;
+                BPIN20-105; 14-INV-115.
+                <br><br>
+                <strong>Evaluaciones adicionales declaradas individualmente:</strong>
+                <ul style="margin-top: 8px; margin-left: 22px;">
+                  <li>G4(INVG04). Postulación: 14-INV-087. Fecha: 20/10/2020.</li>
+                  <li>Convocatoria Investigación 2015. Proyecto: PINV15-53. Año: 2021.</li>
+                  <li>Convocatoria Investigación 2013, Planificación y Ejecución. Postulación: 14-INV-086. Año: 2021.
+                  </li>
+                  <li>Proyecto 14-INV-115. Fecha: 13/01/2021.</li>
+                  <li>Proyecto PINV18-422. Fecha: 15/02/2022.</li>
+                </ul>
+              </li>
+
+              <li class="publication-item">
+                <strong>Consejo Nacional de Humanidades, Ciencias y Tecnologías de México (CONAHCYT):</strong> Evaluador
+                de proyectos “Ciencia de Frontera 2019”. Proyectos: 39584 y 848297.
+              </li>
+
+            </ul>
+
+          </div>
+        </details>
+
+        <details>
+          <summary>Evaluación de trabajos en congresos y ferias científicas</summary>
+          <div class="details-body">
+
+            <ul style="list-style: none;">
+
+              <li class="publication-item">
+                <strong>2019:</strong> Evaluación de trabajo en XVIII Reunión de Trabajo en Procesamiento de la
+                Información y Control. XVIII Workshop on Information Processing and Control.
+              </li>
+
+              <li class="publication-item">
+                <strong>2015:</strong> Evaluación en “Jornadas de Jóvenes Investigadores Tecnológicos”, organizadas por
+                la Facultad Regional Venado Tuerto, Universidad Tecnológica Nacional. Declarado de interés por la
+                Secretaría de Estado de Ciencia, Tecnología e Innovación de la Provincia de Santa Fe bajo Resolución
+                095/15.
+              </li>
+
+              <li class="publication-item">
+                <strong>1998:</strong> XIIa Feria Provincial de Ciencia y Tecnología Juvenil. San Cristóbal, Provincia
+                de Santa Fe, Argentina. 14 al 17 de octubre de 1998. Evaluador. Ministerio de Educación, Cultura,
+                Ciencia y Tecnología (MECCYT).
+              </li>
+
+              <li class="publication-item">
+                <strong>1998:</strong> Quinta Feria Regional de Ciencia y Tecnología. Escuela Normal Superior Nº 32
+                Gral. José de San Martín. Santa Fe, Argentina. 9, 10 y 11 de septiembre de 1998. Evaluador. Ministerio
+                de Educación, Cultura, Ciencia y Tecnología (MECCYT).
+              </li>
+
+              <li class="publication-item">
+                <strong>1997:</strong> Feria Regional de Ciencia y Tecnología. Escuela de Educación Técnica Nº 480
+                Manuel Belgrano. Santa Fe, Argentina. 15, 16 y 17 de septiembre de 1997. Evaluador. Ministerio de
+                Educación, Cultura, Ciencia y Tecnología (MECCYT).
+              </li>
+
+            </ul>
+
+          </div>
+        </details>
+      </section>
+
+      <!-- IDIOMAS -->
+      <section id="idiomas">
+        <div class="section-header">
+          <h2 class="section-title">Idiomas</h2>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+          <div class="content-block">
+            <h3 class="block-title">Inglés</h3>
+            <p class="block-subtitle">Avanzado / Proficient</p>
+            <p class="block-description">ECCE y ECPE (ALICANA). Experiencia de residencia laboral por 1 año en Ottawa,
+              Canadá.</p>
+          </div>
+          <div class="content-block">
+            <h3 class="block-title">Italiano</h3>
+            <p class="block-subtitle">Básico</p>
+            <p class="block-description">3 años de estudios en Asociación Dante Alighieri Santa Fe. Capacidad de lectura
+              y escritura básica.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer
+    style="background-color: var(--primary); color: white; padding: 40px; text-align: center; font-size: 0.8rem; font-weight: 600;">
+    <p>DR. EDUARDO RUBÉN HENQUÍN · CURRÍCULUM VITAE COMPLETO · 2026</p>
+  </footer>
+
+
+  <script>
+    /*
+      Antes de imprimir, abre todos los bloques desplegables <details>
+      para que el PDF salga completo. Después de imprimir, restaura
+      el estado anterior.
+    */
+    const detailsStateBeforePrint = new Map();
+
+    window.addEventListener('beforeprint', () => {
+      document.querySelectorAll('details').forEach((detail, index) => {
+        detailsStateBeforePrint.set(index, detail.open);
+        detail.open = true;
+      });
+    });
+
+    window.addEventListener('afterprint', () => {
+      document.querySelectorAll('details').forEach((detail, index) => {
+        detail.open = detailsStateBeforePrint.get(index);
+      });
+      detailsStateBeforePrint.clear();
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>
